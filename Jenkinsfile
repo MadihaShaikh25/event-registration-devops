@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/YOUR_USERNAME/event-registration-devops.git'
+                git 'https://github.com/MadihaShaikh25/event-registration-devops.git'
             }
         }
 
