@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Innovation Fest Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background: linear-gradient(to right, #dfe9f3, #ffffff);
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 900px;
+        }
+
+        input, select {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            grid-column: span 2;
+            padding: 10px;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #34495e;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Innovation Fest 2026 Registration</h1>
+<p>Please fill in your details below:</p>
+
+<form method="POST">
+
+    <div>
+        <label>Full Name</label><br>
+        <input type="text" name="name" required>
+    </div>
+
+    <div>
+        <label>Email</label><br>
+        <input type="email" name="email" required>
+    </div>
+
+    <div>
+        <label>Phone Number</label><br>
+        <input type="tel" name="phone" required>
+    </div>
+
+    <div>
+        <label>College Name</label><br>
+        <input type="text" name="college" required>
+    </div>
+
+    <div>
+        <label>Department</label><br>
+        <input type="text" name="department" required>
+    </div>
+
+    <div>
+        <label>Year of Study</label><br>
+        <select name="year" required>
+            <option value="">Select Year</option>
+            <option>First Year</option>
+            <option>Second Year</option>
+            <option>Third Year</option>
+            <option>Final Year</option>
+        </select>
+    </div>
+
+    <div style="grid-column: span 2;">
+        <label>Select Event</label><br>
+        <select name="event" required>
+            <option value="">Choose Event</option>
+            <option>Hackathon</option>
+            <option>AI Workshop</option>
+            <option>Tech Talk</option>
+        </select>
+    </div>
+
+    <button type="submit">Complete Registration</button>
+
+</form>
+
+</body>
+</html>
